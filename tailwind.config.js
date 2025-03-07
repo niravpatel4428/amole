@@ -45,6 +45,7 @@ module.exports = {
         shadeGreen: "rgb(6, 38, 45)",
         charcoal: "#02191E",
         forestGreen: "#136459",
+        teal: "#0A3B3A",
       },
       boxShadow: {
         inputshadow: "0px 4px 14px 0px rgba(0, 0, 0, 0.10)",

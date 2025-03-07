@@ -284,7 +284,7 @@ const Dashboard = () => {
                 </ul>
                 <div className="rounded-[6px] bg-white dark:bg-teal shadow-dashboardshadow mt-[12px]">
                   <div
-                    className="dropdown-block cursor-pointer flex items-center justify-between rounded-[6px_6px_0px_0px] p-[8px_10px] xl:p-[8px_15px] bg-darkblue dark:bg-FORESTGREEN"
+                    className="dropdown-block cursor-pointer flex items-center justify-between rounded-[6px_6px_0px_0px] p-[8px_10px] xl:p-[8px_15px] bg-darkblue dark:bg-forestGreen"
                     onClick={toggleLeaguesVisibility}
                   >
                     <span className="text-white text-sm text-base s18:text-[18px] font-medium !leading-tight s18:leading-[155%]">
@@ -319,7 +319,7 @@ const Dashboard = () => {
                 </div>
                 <div className="rounded-[6px] bg-white dark:bg-teal shadow-dashboardshadow mt-[12px]">
                   <div
-                    className="dropdown-block cursor-pointer flex items-center justify-between rounded-[6px_6px_0px_0px] p-[8px_10px] xl:p-[8px_15px] bg-darkblue dark:bg-FORESTGREEN"
+                    className="dropdown-block cursor-pointer flex items-center justify-between rounded-[6px_6px_0px_0px] p-[8px_10px] xl:p-[8px_15px] bg-darkblue dark:bg-forestGreen"
                     onClick={toggleCountryVisibility}
                   >
                     <span className="text-white text-sm text-base s18:text-[18px] font-medium !leading-tight s18:leading-[155%]">
@@ -381,7 +381,7 @@ const Dashboard = () => {
                     ))}
                   </Slider>
                 </div>
-                <ul className="max-md:flex hidden flex-wrap justify-between p-[20px] bg-white dark:bg-FORESTGREEN">
+                <ul className="max-md:flex hidden flex-wrap justify-between p-[20px] bg-white dark:bg-forestGreen">
                   {symbols.map((symbol, index) => (
                     <li key={index} className="w-[15%]">
                       <img
@@ -451,7 +451,7 @@ const Dashboard = () => {
                   {/* leage / 1*2 / double chance header */}
                   <div className="scrollable">
                     <div className="max-lg:min-w-[732px] flex items-center justify-between max-sm:p-[20px] py-3 px-5 s18:p-[15px_23px]">
-                      <select className="rounded-[6px] bg-[#EFEFEF] dark:bg-FORESTGREEN py-2 px-[11px] s18:p-[9px_11px] w-[247px] border-none outline-none text-[#6B7280] dark:text-white text-sm font-normal leading-[114%] appearance-none">
+                      <select className="rounded-[6px] bg-[#EFEFEF] dark:bg-forestGreen py-2 px-[11px] s18:p-[9px_11px] w-[247px] border-none outline-none text-[#6B7280] dark:text-white text-sm font-normal leading-[114%] appearance-none">
                         <option value="" selected className="">
                           Sort by league
                         </option>
@@ -465,7 +465,7 @@ const Dashboard = () => {
                       <span className="text-[#6B7280] dark:text-white text-sm font-normal leading-[128%]">
                         Double chance
                       </span>
-                      <select className="rounded-[6px] bg-[#EFEFEF] dark:bg-FORESTGREEN py-2 px-[11px] s18:p-[9px_11px] w-[213px] border-none outline-none text-[#6B7280] dark:text-white text-sm font-normal leading-[114%] appearance-none">
+                      <select className="rounded-[6px] bg-[#EFEFEF] dark:bg-forestGreen py-2 px-[11px] s18:p-[9px_11px] w-[213px] border-none outline-none text-[#6B7280] dark:text-white text-sm font-normal leading-[114%] appearance-none">
                         <option value="" selected className="">
                           GG/NG
                         </option>
@@ -480,7 +480,7 @@ const Dashboard = () => {
                     {leaguesData.map((league, leagueIndex) => (
                       <div key={leagueIndex} className="main-title-block">
                         {/* League Title */}
-                        <div className="title-block flex justify-between items-center cursor-pointer max-sm:p-[10px_20px] p-[10px_23px] bg-bglightblue dark:bg-FORESTGREEN">
+                        <div className="title-block flex justify-between items-center cursor-pointer max-sm:p-[10px_20px] p-[10px_23px] bg-bglightblue dark:bg-forestGreen">
                           <span className="text-[#404040] dark:text-white max-sm:text-[12px] text-sm font-medium leading-[128%]">
                             {league.leagueTitle}
                           </span>
@@ -608,7 +608,7 @@ const Dashboard = () => {
             </div>
             <div className="col-span-0 hidden s15:block s15:col-span-3">
               <div className="odd-conected rounded-[7px] bg-white dark:bg-teal shadow-dashboardshadow w-full">
-                <div className="flex items-center rounded-[7px_7px_0px_0px] bg-darkblue dark:bg-FORESTGREEN px-[15px]">
+                <div className="flex items-center rounded-[7px_7px_0px_0px] bg-darkblue dark:bg-forestGreen px-[15px]">
                   <span className="border-solid border-r-[1px] border-r-doubleextralightwhite w-[50%] flex items-center gap-[7px] py-[10px] md:py-2 s18:py-[10px] text-white text-base md:text-sm s18:text-[18px] font-medium leading-[100%]">
                     <span className="flex w-8 md:w-6 s18:w-8 h-8 md:h-6 s18:h-8 justify-center items-center bg-yellow rounded-[50%] text-black text-[19px] md:text-base s18:text-[19px] font-medium !leading-none">
                       1
@@ -654,19 +654,19 @@ const Dashboard = () => {
                     Stake
                   </span>
                   <div className="flex gap-[5px] mt-[5px] md:mt-3 s18:mt-[5px]">
-                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                       20/-
                     </span>
-                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                       50/-
                     </span>
-                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                       100/-
                     </span>
-                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                    <span className="cursor-pointer p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] s18:w-[58px] s18:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-base md:text-sm s18:text-base font-medium !leading-none s18:leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                       500/-
                     </span>
-                    <span className="flex justify-end p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] items-center w-full s18:h-[43px] rounded-[6px] border-solid border-bordercolor bg-darkblue text-[18px] text-base s18:text-[18px] text-white font-semibold !leading-none s18:leading-[120%] dark:text-yellow dark:border dark:border-solid dark:bg-FORESTGREEN dark:border-doubleextralightwhite">
+                    <span className="flex justify-end p-[10px_14px] xl:p-[8px_12px] s18:p-[12px_14px] items-center w-full s18:h-[43px] rounded-[6px] border-solid border-bordercolor bg-darkblue text-[18px] text-base s18:text-[18px] text-white font-semibold !leading-none s18:leading-[120%] dark:text-yellow dark:border dark:border-solid dark:bg-forestGreen dark:border-doubleextralightwhite">
                       50
                     </span>
                   </div>
@@ -705,7 +705,7 @@ const Dashboard = () => {
                       </span>
                     </p>
                   </div>
-                  <div className="rounded-[0px_0px_7px_7px] bg-bglightblue dark:bg-FORESTGREEN p-[15px_15px_20px] md:p-[12px_12px_15px] s18:p-[15px_15px_20px] flex flex-col   gap-[10px] md:gap-2 s18:gap-[10px] -mx-[15px] md:-mx-[12px] s18:-mx-[15px]">
+                  <div className="rounded-[0px_0px_7px_7px] bg-bglightblue dark:bg-forestGreen p-[15px_15px_20px] md:p-[12px_12px_15px] s18:p-[15px_15px_20px] flex flex-col   gap-[10px] md:gap-2 s18:gap-[10px] -mx-[15px] md:-mx-[12px] s18:-mx-[15px]">
                     <p className="flex justify-between items-center text-darkblue dark:text-white text-base md:text-sm s18:text-base font-normal leading-[112%] md:leading-none s18:leading-[112%]">
                       Win{" "}
                       <span className="text-darkblue dark:text-white text-base md:text-sm s18:text-base font-semibold leading-[125%]">
@@ -828,7 +828,7 @@ const Dashboard = () => {
       <div className={`open-content ${isOpen ? "block" : "hidden"}`}>
         <div className="odd-conected rounded-[7px] overflow-auto max-h-[400px] block fixed bottom-[84px] lg:bottom-[74px] z-[9] max-w-[428px] mx-auto left-[50%] translate-x-[-50%] s15:hidden pt-5">
           <div className=" rounded-[7px] bg-white dark:bg-charcoal shadow-dashboardshadow w-full">
-            <div className="flex items-center rounded-[7px_7px_0px_0px] bg-darkblue dark:bg-FORESTGREEN px-[15px]">
+            <div className="flex items-center rounded-[7px_7px_0px_0px] bg-darkblue dark:bg-forestGreen px-[15px]">
               <span className="cursor-pointer border-solid border-r-[1px] border-r-doubleextralightwhite w-[50%] flex items-center gap-[7px] p-[10px_0px] text-white text-base s18:text-lg font-medium leading-[100%]">
                 <span className="flex w-[32px] h-[32px] justify-center items-center bg-yellow rounded-[50%] text-black text-base s18:text-lg font-medium leading-[100%]">
                   1
@@ -875,19 +875,19 @@ const Dashboard = () => {
                   Stake
                 </span>
                 <div className="flex gap-[5px] mt-[5px]">
-                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                     20/-
                   </span>
-                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                     50/-
                   </span>
-                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                     100/-
                   </span>
-                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-FORESTGREEN dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
+                  <span className="cursor-pointer p-[8px_10px] max-[1439px]:p-[12px_14px] max-[1439px]:w-[58px] max-[1439px]:h-[43px] flex justify-center items-center rounded-[6px] bg-extralightblack border border-solid border-lightblack text-black text-sm max-[1439px]:text-base font-medium leading-[112%] hover:bg-yellow hover:border-bordercolor transition-all duration-[0.3s] dark:bg-forestGreen dark:border-doubleextralightwhite dark:text-white dark:hover:bg-yellow dark:hover:text-darkblue">
                     500/-
                   </span>
-                  <span className="flex justify-end p-[12px_14px] items-center w-full h-[43px] rounded-[6px] border-solid border-bordercolor bg-darkblue text-[18px] text-white  font-semibold leading-[120%] dark:text-yellow dark:border dark:border-solid dark:bg-FORESTGREEN dark:border-doubleextralightwhite">
+                  <span className="flex justify-end p-[12px_14px] items-center w-full h-[43px] rounded-[6px] border-solid border-bordercolor bg-darkblue text-[18px] text-white  font-semibold leading-[120%] dark:text-yellow dark:border dark:border-solid dark:bg-forestGreen dark:border-doubleextralightwhite">
                     50
                   </span>
                 </div>
@@ -926,7 +926,7 @@ const Dashboard = () => {
                     </span>
                   </p>
                 </div>
-                <div className="rounded-[0px_0px_7px_7px] bg-bglightblue dark:bg-FORESTGREEN p-[15px_15px_20px] flex flex-col gap-[10px] mx-[-15px]">
+                <div className="rounded-[0px_0px_7px_7px] bg-bglightblue dark:bg-forestGreen p-[15px_15px_20px] flex flex-col gap-[10px] mx-[-15px]">
                   <p className="flex justify-between items-center text-darkblue dark:text-white text-sm max-[1439px]:text-base font-normal leading-[112%]">
                     Win{" "}
                     <span className="text-darkblue dark:text-white text-sm max-[1439px]:text-base font-semibold leading-[125%]">
