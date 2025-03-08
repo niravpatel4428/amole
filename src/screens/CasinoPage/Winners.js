@@ -3,14 +3,17 @@ import c15 from "../../images/c15.png";
 import c16 from "../../images/c16.png";
 import c17 from "../../images/c17.png";
 import c18 from "../../images/c18.png";
-import c19 from "../../images/c19.png";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 const Winners = () => {
   return (
-    <div className="mb-3">
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
-      {winners.map((winner, index) => (
-          <div key={index} className="rounded-md flex gap-1 bg-[#0C2240] dark:bg-[#136459]">
+    <div className="mb-3 winners-slider">
+      <Marquee pauseOnHover>
+        {winners.map((winner, index) => (
+          <div
+            key={index}
+            className="rounded-md flex gap-1 bg-[#136459]"
+          >
             <Link to="/" className="p-1 pr-0 w-fit">
               <img
                 src={winner.imgSrc}
@@ -18,7 +21,7 @@ const Winners = () => {
                 className="object-cover w-24 min-w-24 lg:w-32 lg:min-w-32 h-16 lg:h-20"
               />
             </Link>
-            <div className="flex flex-col justify-between w-full p-1">
+            <div className="flex flex-col justify-between w-full p-1 pr-2">
               <div className="flex flex-col">
                 <p className="text-white text-sm lg:text-base font-bold inline-flex line-clamp-1">
                   {winner.amount}
@@ -36,37 +39,44 @@ const Winners = () => {
             </div>
           </div>
         ))}
-      </div>
+      </Marquee>
     </div>
   );
 };
 
 export default Winners;
 
-
 const winners = [
-    {
-      id: "50***06",
-      amount: "1,080,000",
-      currency: "ETB",
-      date: "3.7.2025",
-      time: "10:33",
-      imgSrc: c15,
-    },
-    {
-      id: "50***07",
-      amount: "850,000",
-      currency: "ETB",
-      date: "4.7.2025",
-      time: "11:45",
-      imgSrc: c16,
-    },
-    {
-      id: "50***08",
-      amount: "1,200,000",
-      currency: "ETB",
-      date: "5.7.2025",
-      time: "12:10",
-      imgSrc: c17,
-    },
-  ];
+  {
+    id: "50***06",
+    amount: "1,080,000",
+    currency: "ETB",
+    date: "3.7.2025",
+    time: "10:33",
+    imgSrc: c15,
+  },
+  {
+    id: "50***07",
+    amount: "850,000",
+    currency: "ETB",
+    date: "4.7.2025",
+    time: "11:45",
+    imgSrc: c16,
+  },
+  {
+    id: "50***08",
+    amount: "1,200,000",
+    currency: "ETB",
+    date: "5.7.2025",
+    time: "12:10",
+    imgSrc: c17,
+  },
+  {
+    id: "50***08",
+    amount: "1,200,000",
+    currency: "ETB",
+    date: "5.7.2025",
+    time: "12:10",
+    imgSrc: c18,
+  },
+];

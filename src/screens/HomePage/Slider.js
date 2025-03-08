@@ -162,8 +162,8 @@ const Slidersection = () => {
     };
 
     return (
-        <div className="max-[420px]:overflow-hidden image-slider max-[420px]:pt-[80px] max-md:pt-[65px] md:pt-[75px] xl:pt-[60px] s18:pt-[120px] relative max-sm:px-[15px] px-[20px] max-sm:mb-[10px] mb-[20px] mt-[-1px]">
-            <div className="p-[15px_20px_15px_20px] sm:p-3 s15:p-4 s18:p-[21px_20px_20px_20px] border border-solid rounded-[0px_0px_20px_20px] dark:bg-[#182D4A] bg-lightyellow shadow-inputshadow border-yellow dark:border-[#5D6C80]">
+        <div className="max-[420px]:overflow-hidden image-slider max-[420px]:pt-[80px] max-md:pt-[65px] md:pt-[75px] xl:pt-[60px] s18:pt-[113px] relative max-sm:px-[15px] px-[20px] max-sm:mb-[10px] mb-[20px] mt-[-1px]">
+            <div className="p-[15px_20px_15px_20px] sm:p-3 s15:p-4 s18:p-[21px_20px_20px_20px] border border-solid rounded-[0px_0px_20px_20px] bg-[#182D4A] shadow-inputshadow border-[#5D6C80]">
                 <div className="max-[575px]:justify-center max-md:ml-[0px] max-lg:p-[0px] p-[0px_0px_0px_18px] grid grid-cols-12 gap-[35px] items-center">
                     <div className="max-[575px]:hidden max-[575px]:col-span-0 col-span-1">
                         <button
@@ -184,16 +184,12 @@ const Slidersection = () => {
                                             <div className="max-[575px]:flex max-[575px]:justify-center">
                                                 <img
                                                     // src={isDarkMode ? imgslider.darkImage : imgslider.image}
-                                                    src={
-                                                        isDarkMode && imgslider.darkImage
-                                                            ? imgslider.darkImage
-                                                            : imgslider.image
-                                                    }
+                                                    src={imgslider.darkImage}
                                                     alt="img"
                                                     className="max-[575px]:w-[35px] size-[35px] xl:size-9 s15:size-10 s18:size-12 rounded-[5px]"
                                                 />
                                             </div>
-                                            <span className="block text-center max-md:text-[10px] text-[12px] leading-[16px] mt-[3px] dark:text-white">{imgslider.name}</span>
+                                            <span className="block text-center max-md:text-[10px] text-[12px] leading-[16px] mt-[3px] text-white">{imgslider.name}</span>
                                         </div>
                                     </div>
                                 ))}

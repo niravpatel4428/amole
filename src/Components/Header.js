@@ -10,7 +10,7 @@ import Register from "./Register";
 import Login from "./Login";
 
 const Header = () => {
-  // Toggle Register / Login Modal 
+  // Toggle Register / Login Modal
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpenRGS, setIsModalOpenRGS] = useState(false);
   const openModal = () => {
@@ -26,41 +26,11 @@ const Header = () => {
   const closeModalRGS = () => {
     setIsModalOpenRGS(false);
   };
-  // Dark mode / Light mode state 
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };
-  const toggleTheme = () => {
-    // Toggle the dark mode theme
-    const newTheme = isDarkMode ? "light" : "dark";
-    localStorage.setItem("theme", newTheme);
-
-    // Apply the theme to the document element
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-
-    // Update the state
-    setIsDarkMode(!isDarkMode);
-  };
-  useEffect(() => {
-    // Check localStorage or OS preference on page load
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else if (savedTheme === "light") {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove("dark");
-    } else {
-      // Handle default based on system preference
-      const prefersDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setIsDarkMode(prefersDarkMode);
-      document.documentElement.classList.toggle("dark", prefersDarkMode);
-    }
-  }, []);
 
   useEffect(() => {
     if (isCollapsed) {
@@ -72,7 +42,7 @@ const Header = () => {
 
   return (
     <>
-      <section className="fixed top-0 left-0 right-0 w-full bg-[#0C2240] dark:bg-shadeGreen z-50 max-[420px]:py-[25px] py-3 s18:py-[35px]">
+      <section className="fixed top-0 left-0 right-0 w-full bg-shadeGreen z-50 max-[420px]:py-[25px] py-3 s18:py-[35px]">
         <div className="flex max-xl:justify-between items-center w-full max-w-[1780px] mx-auto max-sm:px-[15px] px-[30px]">
           <div className="max-420: relative z-[100] flex max-xl:pl-[40px]">
             <Link to="/" className="inline-block">
@@ -85,22 +55,19 @@ const Header = () => {
             </Link>
           </div>
           <div className="max-xl:flex max-md:items-center xl:hidden gap-[10px]">
-            <span className="max-[420px]:w-[30px] max-[420px]:h-[30px] max-[420px]:p-[8px] md:hidden max-md:flex justify-center items-center bg-white dark:bg-white/10 rounded-[5px] w-[40px] h-[40px] cursor-pointer">
-              <img
-                src={isDarkMode ? search : search}
-                alt="search" className="dark:invert"
-              />
+            <span className="max-[420px]:w-[30px] max-[420px]:h-[30px] max-[420px]:p-[8px] md:hidden max-md:flex justify-center items-center bg-white/10 rounded-[5px] w-[40px] h-[40px] cursor-pointer">
+              <img src={search} alt="search" className="invert" />
             </span>
             {/* search btn */}
             <div className="relative max-md:hidden">
               <input
                 type="search"
-                className="h-full xl:w-[150px] s16:w-full md:p-[11px_40px_11px_12px] s16:p-[11px_40px_11px_15px] rounded-[5px] bg-white 
-                dark:bg-white/10 shadow-inputshadow placeholder:text-lightblue placeholder:text-[16px] placeholder:leading-[150%] dark:placeholder:text-white dark:text-white"
+                className="h-full xl:w-[150px] s16:w-full md:p-[11px_40px_11px_12px] s16:p-[11px_40px_11px_15px] rounded-[5px] 
+                bg-white/10 shadow-inputshadow placeholder:text-[16px] placeholder:leading-[150%] placeholder:text-white text-white"
                 placeholder="Search.."
               />
               <img
-                src={isDarkMode ? darksearch : search}
+                src={darksearch}
                 alt="search"
                 className="absolute w-[18px] h-[18px] top-[50%] translate-y-[-50%] right-[15px] z-50"
               />
@@ -108,32 +75,17 @@ const Header = () => {
             {/* join now btn */}
             <button
               onClick={openModalRGS}
-              className="max-[420px]:h-[30px] max-[420px]:text-[12px] max-md:min-w-[70px] max-md:h-[40px] min-w-[88px] bg-yellow  border-solid border-[2px] border-transparent rounded-[5px] inline-flex items-center justify-center p-[11px_8px] max-md:text-[14px] text-[16px] leading-[150%] font-medium transition-all duration-[0.3s] hover:bg-transparent hover:border-yellow hover:text-yellow"
+              className="max-[420px]:h-[30px] max-[420px]:text-[12px] max-md:min-w-[70px] max-md:h-[40px] min-w-[88px] bg-yellow  border-solid border-[2px] border-transparent rounded-[5px] inline-flex items-center justify-center p-[11px_8px] max-md:text-[14px] text-[16px] leading-[150%] font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
             >
               Join Now
             </button>
             {/* login btn */}
             <button
               onClick={openModal}
-              className=" max-md:dark:hover:bg-white max-md:hover:bg-white max-md:dark:bg-white max-[420px]:h-[30px] max-md:hover:bg-white max-md:text-[0px] max-md:min-w-[40px] max-md:h-[40px] min-w-[88px] bg-white shadow-inputshadow  border-solid border-[2px] border-transparent  rounded-[5px] inline-flex items-center justify-center p-[11px_8px] text-[16px] leading-[150%] font-medium transition-all duration-[0.3s] dark:bg-buttonGradient dark:text-white hover:bg-transparent dark:border-[#1b4334] dark:hover:border-[#1b4334] hover:text-white  dark:hover:bg-buttonGradientHover"
+              className="max-[420px]:h-[30px] max-md:text-[0px] max-md:min-w-[40px] max-md:h-[40px] min-w-[88px] shadow-inputshadow !rounded-md overflow-hidden inline-flex items-center justify-center p-[11px_8px] text-[16px] leading-[150%] font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white  hover:text-white hover:bg-buttonGradientHover"
             >
               Login
-              <img
-                src={isDarkMode ? login : login}
-                alt="search"
-                className="md:hidden"
-              />
-            </button>
-            {/* theme btn */}
-            <button
-              onClick={toggleTheme}
-              className="max-sm:hidden max-md:w-[40px] max-md:h-[40px] w-[48px] h-[50px] flex justify-center items-center p-[10px] bg-white dark:bg-[#0A3B3A] rounded-[5px]"
-            >
-              <img
-                src={isDarkMode ? dark : light}
-                alt={"Light Mode"}
-                className=""
-              />
+              <img src={login} alt="search" className="md:hidden" />
             </button>
           </div>
           {/* big screen links */}
@@ -141,37 +93,37 @@ const Header = () => {
             <ul className="flex flex-row items-center xl:gap-[18px] s16:gap-[30px] xl:mt-0 mx-auto">
               <li>
                 {/* Native scrolling using hash links */}
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   Sports Betting
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   Live Betting
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   OdiLeague
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   Casino
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   Jackpots
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   Livescore
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                   Promotions
                 </Link>
               </li>
@@ -181,12 +133,12 @@ const Header = () => {
               <div className="relative">
                 <input
                   type="search"
-                  className="h-full xl:w-[150px] s16:w-full p-[8px_40px_8px_12px] s18:p-[11px_40px_11px_15px] rounded-[5px] bg-white 
-                  dark:bg-[#0A3B3A] shadow-inputshadow placeholder:text-lightblue placeholder:text-[16px] placeholder:!leading-none s18: s18:placeholder:leading-[150%] dark:placeholder:text-white dark:text-white"
+                  className="h-full xl:w-[150px] s16:w-full p-[8px_40px_8px_12px] s18:p-[11px_40px_11px_15px] rounded-[5px] 
+                  bg-[#0A3B3A] shadow-inputshadow placeholder:text-[16px] placeholder:!leading-none s18: s18:placeholder:leading-[150%] placeholder:text-white text-white"
                   placeholder="Search.."
                 />
                 <img
-                  src={isDarkMode ? darksearch : search}
+                  src={darksearch}
                   alt="search"
                   className="absolute w-[18px] h-[18px] top-[50%] translate-y-[-50%] right-[15px] z-50"
                 />
@@ -194,28 +146,18 @@ const Header = () => {
               {/* joinnow btn */}
               <button
                 onClick={openModalRGS}
-                className="min-w-[88px] bg-yellow  border-solid border-[2px] border-transparent rounded-[5px] inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-[16px] !leading-none s18:leading-[150%] font-medium transition-all duration-[0.3s] hover:bg-transparent hover:border-yellow hover:text-yellow"
+                className="min-w-[88px] bg-yellow  border-solid border-[2px] border-transparent rounded-[5px] inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-[16px] !leading-none s18:leading-[150%] font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
               >
                 Join Now
               </button>
               {/* login btn */}
               <button
                 onClick={openModal}
-                className="min-w-[88px] bg-white shadow-inputshadow  border-solid border-[2px] border-transparent dark:border-[#1b4334] rounded-[5px] inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-[16px] !leading-none s18:leading-[150%] font-medium transition-all duration-[0.3s] dark:bg-buttonGradient dark:text-white hover:bg-transparent hover:border-white hover:text-white dark:hover:border-[#1b4334] dark:hover:bg-buttonGradientHover"
+                className="min-w-[88px] shadow-inputshadow border-solid border-[2px] border-[#1b4334] rounded-[5px] inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-[16px] !leading-none s18:leading-[150%] font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white hover:text-white hover:border-[#1b4334] hover:bg-buttonGradientHover"
               >
                 Login
               </button>
               {/* theme btn */}
-              <button
-                onClick={toggleTheme}
-                className="s18:w-[48px] s18:h-[50px] flex justify-center items-center p-2 s18:p-[10px] bg-white dark:bg-[#0A3B3A] rounded-[5px]"
-              >
-                <img
-                  src={isDarkMode ? dark : light}
-                  alt={"Light Mode"}
-                  className="size-5 s18:size-[26px]"
-                />
-              </button>
             </div>
           </div>
           {/* hamburger toggle button */}
@@ -227,21 +169,21 @@ const Header = () => {
             <span
               className={`${
                 isCollapsed
-                  ? "w-[30px] rotate-45 top-[5px] duration-500"
+                  ? "w-[20px] rotate-45 top-[4px] duration-500"
                   : "duration-500"
-              } relative w-[22px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block mb-2`}
+              } relative w-[18px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block mb-1`}
             ></span>
             <span
               className={`${
                 isCollapsed ? "hidden" : "duration-500"
-              } relative w-[28px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block mb-2`}
+              } relative w-[24px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block mb-1`}
             ></span>
             <span
               className={`${
                 isCollapsed
-                  ? "w-[30px] -rotate-45 -top-[6px] duration-500"
+                  ? "w-[20px] -rotate-45 -top-[2px] duration-500"
                   : "duration-500"
-              } relative w-[22px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block`}
+              } relative w-[18px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block`}
             ></span>
           </button>
         </div>
@@ -252,43 +194,43 @@ const Header = () => {
               isCollapsed
                 ? "top-0 left-0 h-full transition-all duration-500"
                 : "top-0 left-[-100%] transition-all duration-500"
-            } fixed z-[99] top-0 overflow-auto dark:bg-[#136459] bg-darkblue h-full w-full xl:hidden`}
+            } fixed z-[99] top-0 overflow-auto bg-[#136459] h-full w-full xl:hidden`}
           >
             <div className="h-full w-full flex justify-center">
               <ul className="flex flex-col items-center justify-center gap-5 overflow-auto">
                 <li>
                   {/* Native scrolling using hash links */}
-                  <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-sm s18:text-[16px] !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     Sports Betting
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     Live Betting
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     OdiLeague
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     Casino
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     Jackpots
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     Livescore
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-[0.3s]">
+                  <Link className="text-white text-[16px] leading-[150%] font-normal hover:text-yellow transtition-all duration-300">
                     Promotions
                   </Link>
                 </li>
