@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../layout";
 import Transaction from "./Transaction";
-import Slidersection from "../HomePage/Slider";
 import SportMode from "../../Components/SportMode";
 
 const Transactionpage = () => {

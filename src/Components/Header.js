@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import search from "../images/search.svg";
-import light from "../images/light.svg";
-import dark from "../images/dark.svg";
 import darksearch from "../images/darksearch.svg";
 import login from "../images/login.svg";
 import Register from "./Register";

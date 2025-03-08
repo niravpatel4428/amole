@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import symbol1 from "../../images/symbol1.png";
 import symbol2 from "../../images/symbol2.png";
 import symbol3 from "../../images/symbol3.png";
@@ -8,23 +8,14 @@ import symbol6 from "../../images/symbol6.png";
 import dashboardimg from "../../images/dashboardimg.png";
 import dashboardimg2 from "../../images/dashboardimg2.png";
 import dashboardimg3 from "../../images/dashboardimg3.png";
-import dropdownarrow from "../../images/dropdownarrow.svg";
 import darkdropdownarrow from "../../images/darkdropdownarrow.svg";
 import downarrow from "../../images/downarrow.svg";
-import graydropdown from "../../images/graydropdown.svg";
 import smallwhite from "../../images/smallwhite.svg";
-import calender from "../../images/calender.svg";
 import whitedown from "../../images/whitedown.svg";
 import whitecalender from "../../images/whitecalender.svg";
-import selectdropdownsvg from "../../images/selectdropdownsvg.svg";
 import whiteselectdown from "../../images/whiteselectdown.svg";
 import remove from "../../images/remove.svg";
-import grayremove from "../../images/grayremove.svg";
 import darkremove from "../../images/darkremove.svg";
-import contact from "../../images/contact.svg";
-import email from "../../images/email.svg";
-import safari from "../../images/safari.png";
-import airtel from "../../images/airtel.png";
 import close from "../../images/close.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -58,16 +49,12 @@ const Dashboard = () => {
     setIsCountryVisible(!isCountryVisible);
   };
 
-
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
 
- 
-
- 
   const sliderRef = useRef();
 
   const [isToggled, setIsToggled] = useState(false);

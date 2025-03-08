@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,7 +7,6 @@ import dashboardimg from "../../images/dashboardimg.png";
 import dashboardimg2 from "../../images/dashboardimg2.png";
 import dashboardimg3 from "../../images/dashboardimg3.png";
 import search from "../../images/search.svg";
-import greater from "../../images/greater.svg";
 import c1 from "../../images/c1.png";
 import c2 from "../../images/c2.png";
 import c3 from "../../images/c3.png";
