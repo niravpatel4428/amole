@@ -56,10 +56,6 @@ input::-webkit-search-cancel-button {
   border-bottom: 1px solid rgba(12, 34, 64, 0.05);
 }
 
-.dark .title-wrp > *:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
 select {
   background-image: url("images/selectdropdownsvg.svg");
   background-repeat: no-repeat;
@@ -67,15 +63,7 @@ select {
   background-position: right 11px center;
 }
 
-.dark select {
-  background-image: url("images/whiteselectdown.svg");
-}
-
 .select {
-  background-image: url("images/angledown.svg");
-}
-
-.dark .select {
   background-image: url("images/angledown.svg");
 }
 

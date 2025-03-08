@@ -27,7 +27,6 @@ const Header = () => {
     setIsModalOpenRGS(false);
   };
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };

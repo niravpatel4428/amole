@@ -58,24 +58,6 @@ const Dashboard = () => {
     setIsCountryVisible(!isCountryVisible);
   };
 
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-
-  const toggleTheme = () => {
-    // Toggle the dark mode theme
-    const newTheme = isDarkMode ? "light" : "dark";
-    localStorage.setItem("theme", newTheme);
-
-    // Apply the theme to the document element
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-
-    // Update the state
-    setIsDarkMode(!isDarkMode);
-  };
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -83,51 +65,10 @@ const Dashboard = () => {
     setIsChecked(!isChecked);
   };
 
-  useEffect(() => {
-    // Check localStorage or OS preference on page load
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
-    } else if (savedTheme === "light") {
-      setIsDarkMode(false);
-      document.documentElement.classList.remove("dark");
-    } else {
-      // Handle default based on system preference
-      const prefersDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setIsDarkMode(prefersDarkMode);
-      document.documentElement.classList.toggle("dark", prefersDarkMode);
-    }
-  }, []);
+ 
 
-  // Detect dark mode changes (e.g., using a class or preference)
-  useEffect(() => {
-    const checkDarkMode = () => {
-      setIsDarkMode(document.documentElement.classList.contains("dark"));
-    };
-
-    // Check for initial mode
-    checkDarkMode();
-
-    // Add an observer for changes in the class
-    const observer = new MutationObserver(checkDarkMode);
-    observer.observe(document.documentElement, { attributes: true });
-
-    // Cleanup observer
-    return () => observer.disconnect();
-  }, []);
-
+ 
   const sliderRef = useRef();
-
-  const handlePrevClick = () => {
-    sliderRef.current?.slickPrev();
-  };
-
-  const handleNextClick = () => {
-    sliderRef.current?.slickNext();
-  };
 
   const [isToggled, setIsToggled] = useState(false);
 
@@ -248,7 +189,7 @@ const Dashboard = () => {
     { text: "SUN" },
     {
       text: "",
-      icons: isDarkMode ? [whitecalender, whitedown] : [calender, downarrow],
+      icons: [whitecalender, whitedown],
     },
   ];
 
@@ -291,7 +232,7 @@ const Dashboard = () => {
                       Top Leagues
                     </span>
                     <img
-                      src={isDarkMode ? darkdropdownarrow : dropdownarrow}
+                      src={darkdropdownarrow}
                       alt="dropdown"
                       className="w-[15px] xl:w-[19px]"
                     />
@@ -326,7 +267,7 @@ const Dashboard = () => {
                       All countries
                     </span>
                     <img
-                      src={isDarkMode ? darkdropdownarrow : dropdownarrow}
+                      src={darkdropdownarrow}
                       alt="dropdown"
                       className="w-[15px] xl:w-[19px]"
                     />
@@ -349,7 +290,7 @@ const Dashboard = () => {
                           <span className="flex items-center text-lightwhite text-[12px] xl:text-sm font-normal block leading-[128%]">
                             {country.count}
                             <img
-                              src={isDarkMode ? smallwhite : graydropdown}
+                              src={smallwhite}
                               alt="dropdown"
                               className="ml-[6px] xl:ml-[12px] w-[12px] xl:w-[15px]"
                             />
@@ -408,11 +349,7 @@ const Dashboard = () => {
                             {item.text && <span>{item.text}</span>}
                             {item.icon && (
                               <img
-                                src={
-                                  isDarkMode && item.darkIcon
-                                    ? item.darkIcon
-                                    : item.icon
-                                }
+                                src={item.darkIcon}
                                 alt="icon"
                                 className="min-w-[10px] ml-[4px]"
                               />
