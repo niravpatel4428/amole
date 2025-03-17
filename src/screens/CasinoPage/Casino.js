@@ -26,7 +26,7 @@ const Casino = () => {
                 <>
                   <CenterImageSlider />
                 </>
-                <div className="p-5 md:p-3 s15:p-5 bg-[#0a3b3a] rounded-md shadow-inputshadow">
+                <div className="p-5 md:p-3 s15:p-5 rounded-md shadow-inputshadow">
                   <>
                     <Winners />
                   </>

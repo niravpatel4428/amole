@@ -36,7 +36,7 @@ import c30 from "../../../images/c30.png";
 
 const CasinoCenter = () => {
   return (
-    <>
+    <div className="bg-[#0a3b3a] p-5 md:p-3 s15:p-5 rounded-md shadow-inputshadow">
       {/* search */}
       <div className="relative rounded-md shadow-inputshadow inputshadow mb-3 s15:mb-5">
         <input
@@ -67,7 +67,7 @@ const CasinoCenter = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
