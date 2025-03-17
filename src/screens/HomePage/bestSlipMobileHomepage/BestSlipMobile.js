@@ -42,7 +42,7 @@ const BestSlipMobile = () => {
             </>
           ) : (
             <>
-              <span className="absolute -top-[20px] lg:-top-4 s18:top-[-22px] left-1/2 translate-x-1/2 flex w-8 h-8 max-md:w-[38px] max-md:h-[38px] justify-center items-center rounded-[50%] text-black bg-white text-[22px] md:text-abse s16:text-lg max-md:text-[22px] font-medium leading-[100%]">
+              <span className="absolute -top-[20px] lg:-top-4 s18:top-[-22px] left-1/2 -translate-x-1/2 flex w-8 h-8 max-md:w-[38px] max-md:h-[38px] justify-center items-center rounded-[50%] text-black bg-white text-[22px] md:text-abse s16:text-lg max-md:text-[22px] font-medium leading-[100%]">
                 1
               </span>
               Betslip

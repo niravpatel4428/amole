@@ -13,8 +13,8 @@ export default function LoadingPopup() {
   return (
     isOpen && (
       <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm z-50">
-        <div className="h-screen w-full max-w-[80%] md:max-w-md lg:max-w-xl mx-auto flex flex-col justify-center items-end pb-12">
-          <div className="w-full h-auto mt-auto rounded-lg text-center">
+        <div className="h-screen w-full max-w-[90%] md:max-w-2xl mx-auto flex flex-col justify-end items-end pb-12">
+          <div className="w-3/4 mx-auto h-auto rounded-lg">
             <img
               src={modalonload}
               alt="img"

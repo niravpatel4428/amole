@@ -10,7 +10,7 @@ const MobileGames = () => {
 
   return (
     <>
-      <ul className="max-md:flex hidden flex-wrap justify-between p-[20px_15px] md:p-[20px] bg-forestGreen">
+      <ul className="max-md:flex hidden flex-wrap justify-between py-3 px-[15px] md:p-[20px] bg-forestGreen">
         {symbols.map((symbol, index) => (
           <li key={index} className="w-[15%]">
             <img

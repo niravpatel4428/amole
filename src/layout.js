@@ -9,7 +9,7 @@ const layout = ({ children }) => {
     <>
       <DepositStrip />
       <Header />
-      <div className="bg-darkGreen sticky max-[420px]:top-[62px] top-[72px] lg:top-[82px] xl:top-[68px] s18:top-[80px] z-40 max-sm:pb-0 pb-[20px]">
+      <div className="bg-darkGreen sticky max-[420px]:top-12 top-12 lg:top-[82px] xl:top-[68px] s18:top-[80px] z-40 max-sm:pb-0 pb-[20px]">
         <SportMode />
       </div>
       <main>{children}</main>

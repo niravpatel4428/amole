@@ -70,7 +70,7 @@ const Transaction = () => {
             <div className="min-w-[900px] flex flex-wrap items-center justify-between p-[20px_20px] md:p-[10px_37px] s16:p-[16px_37px] s18:p-[20px_37px] rounded-[18px_18px_0px_0px] md:rounded-[25px_25px_0px_0px] border bg-[#0b905c26] border-[#0b905c26]">
               <div className="flex items-center gap-[30px] xl:gap-[75px]">
                 <div className="flex items-center gap-[13px]">
-                  <label className="text-sm xl:text-base s15:text-[20px] s18:text-[22px] font-bold  !leading-tight s18:!leading-[160%] text-white">
+                  <label className="text-sm xl:text-base s15:text-xl s18:text-[22px] font-bold  !leading-tight s18:!leading-[160%] text-white">
                     From:
                   </label>
                   <input
@@ -79,7 +79,7 @@ const Transaction = () => {
                   />
                 </div>
                 <div className="flex items-center gap-[13px]">
-                  <label className="text-sm xl:text-base s15:text-[20px] s18:text-[22px] font-bold !leading-tight s18:!leading-[160%] text-white">
+                  <label className="text-sm xl:text-base s15:text-xl s18:text-[22px] font-bold !leading-tight s18:!leading-[160%] text-white">
                     To:
                   </label>
                   <input
@@ -89,7 +89,7 @@ const Transaction = () => {
                 </div>
               </div>
               <div className="flex items-center gap-[13px]">
-                <label className="text-sm xl:text-base s15:text-[20px] s18:text-[22px] font-bold leading-[160%] text-white">
+                <label className="text-sm xl:text-base s15:text-xl s18:text-[22px] font-bold leading-[160%] text-white">
                   Type:
                 </label>
                 <select className="select text-mutedblue text-sm s16:text-lg s18:text-[22px] py-2 px-2 font-bold !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white min-w-[190px] rounded-[6px] md:px-3 s18:px-4 md:py-2 s18:py-4 w-full appearance-none outline-none">

@@ -51,7 +51,7 @@ input::-webkit-search-cancel-button {
 }
 
 .title-wrp > *:not(:last-child) {
-  border-bottom: 1px solid rgba(12, 34, 64, 0.05);
+  border-bottom: 1px solid #13645975;
 }
 
 select {
