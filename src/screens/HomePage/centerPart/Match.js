@@ -41,7 +41,7 @@ const Match = () => {
     <>
       <div className="max-sm:mt-0 mt-3 s18:mt-[17px] sm:rounded-lg bg-[#0A3B3A] shadow-dashboardshadow">
         {/* sports / Hrs icon TODAY THU FRI SAT SUN */}
-        <div className="sticky max-[420px]:top-20 top-20 sm:top-24 md:top-[136px] lg:top-[calc(154px-8px)] xl:top-[132px] s16:top-32 s18:top-36 rounded-[6px] bg-[#0A3B3A] shadow-dashboardshadow">
+        <div className="sticky max-[420px]:top-20 top-20 sm:top-24 md:top-[136px] lg:top-[calc(154px-10px)] xl:top-[132px] s16:top-32 s18:top-36 rounded-[6px] bg-[#0A3B3A] shadow-dashboardshadow">
           <div className="max-sm:flex-col max-sm:items-start max-sm:p-[8px_15px_0px] flex p-[0px_20px] items-center justify-between border-b-[1px] border-solid border-lightborderyellow">
             <span className="text-white text-base s18:text-xl font-bold leading-none">
               Sports
