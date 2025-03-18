@@ -61,7 +61,7 @@ const AllCountry = () => {
   };
   return (
     <>
-      <div className="rounded-[6px] bg-teal shadow-dashboardshadow mt-3">
+      <div className="rounded-md bg-teal shadow-dashboardshadow mt-3">
         <div
           className="dropdown-block cursor-pointer flex items-center justify-between rounded-[6px_6px_0px_0px] p-[8px_10px] xl:p-[8px_15px] bg-forestGreen"
           onClick={toggleCountryVisibility}
@@ -82,20 +82,20 @@ const AllCountry = () => {
                 key={index}
                 className="cursor-pointer flex justify-between py-2 px-3 s18:p-[10px_14px] border-b-[1px] border-solid border-bordercolor"
               >
-                <div className="country-name relative mr-[10px] text-white text-[12px] xl:text-sm font-medium leading-[128%]">
+                <div className="country-name relative mr-[10px] text-white text-xs xl:text-sm font-medium leading-tight">
                   {country.name}
                   <ul className="dropdown-list">
-                    <li className="text-lightwhite text-[12px] xl:text-sm font-normal block leading-[128%]  md:!leading-tight s18:leading-[128%]">
+                    <li className="text-lightwhite text-xs xl:text-sm font-normal block leading-tight  md:!leading-tight s18:leading-tight">
                       {country.dropdownitem}
                     </li>
                   </ul>
                 </div>
-                <span className="flex items-center text-lightwhite text-[12px] xl:text-sm font-normal leading-[128%]">
+                <span className="flex items-center text-lightwhite text-xs xl:text-sm font-normal leading-tight">
                   {country.count}
                   <img
                     src={smallwhite}
                     alt="dropdown"
-                    className="ml-[6px] xl:ml-[12px] w-[12px]"
+                    className="ml-[6px] xl:ml-3 w-3"
                   />
                 </span>
               </div>

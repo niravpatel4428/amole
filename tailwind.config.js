@@ -33,6 +33,9 @@ module.exports = {
         forestGreen: "#136459",
         teal: "#0A3B3A",
       },
+      fontSize: {
+        '22': '22px',
+      },
       boxShadow: {
         inputshadow: "0px 4px 14px 0px rgba(0, 0, 0, 0.10)",
         dashboardshadow: "0px 4.532px 15.863px 0px rgba(0, 0, 0, 0.10)",
@@ -42,6 +45,13 @@ module.exports = {
         navHover: "linear-gradient(180deg,#06262d, rgb(15, 81, 73) 100%);",
         buttonGradient: "linear-gradient(180deg, #00c77a, #1b4334 100%)",
         buttonGradientHover: "linear-gradient(180deg, #1b4334, #00c77a 100%)",
+      },
+      borderRadius: {
+        '5px': '5px',
+        '50': '50%',
+      },
+      lineHeight: {
+        '12': '1.12',
       },
     },
   },

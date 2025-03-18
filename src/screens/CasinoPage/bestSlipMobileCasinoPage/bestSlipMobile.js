@@ -10,21 +10,21 @@ const BestSlipMobile = () => {
   };
   return (
     <>
-      <div className="s15:hidden flex justify-center items-center fixed bottom-0 z-[9] left-[50%] translate-x-[-50%] w-full max-w-[428px] mx-auto rounded-[20px_20px_0px_0px] bg-[#02191E] p-[30px_15px_12px] lg:p-[24px_15px_12px] s18:p-[40px_15px_25px]">
+      <div className="s15:hidden flex justify-center items-center fixed bottom-0 z-[9] left-1/2 -translate-x-1/2 w-full max-w-[428px] mx-auto rounded-[20px_20px_0px_0px] bg-[#02191E] p-[30px_15px_12px] lg:p-[24px_15px_12px] s18:p-[40px_15px_25px]">
         <span
-          className="select-none cursor-pointer border-solid border-r-[1px] border-r-doubleextralightwhite inline-flex flex-col items-center gap-[7px] p-[0px] text-white text-lg font-medium leading-[100%]"
+          className="select-none cursor-pointer border-solid border-r-[1px] border-r-doubleextralightwhite inline-flex flex-col items-center gap-[7px] p-[0px] text-white text-lg font-medium leading-none"
           onClick={handleToggle}
         >
           {isOpen ? (
             <>
-              <span className="absolute -top-[20px] lg:-top-4 s18:top-[-22px] left-[50%] translate-x-[-50%] flex w-8 h-8 max-md:w-[38px] max-md:h-[38px] justify-center items-center rounded-[50%] text-black bg-white text-[22px] md:text-abse s16:text-lg max-md:text-[22px] font-medium leading-[100%]">
+              <span className="absolute -top-5 lg:-top-4 s18:top-[-22px] left-1/2 -translate-x-1/2 flex w-8 h-8 max-md:w-[38px] max-md:h-[38px] justify-center items-center rounded-50 text-black bg-white text-22 md:text-base s16:text-lg max-md:text-22 font-medium leading-none">
                 <img src={close} alt="Close" className="w-[14px] h-[14px]" />
               </span>
               Close
             </>
           ) : (
             <>
-              <span className="absolute -top-[20px] lg:-top-4 s18:top-[-22px] left-[50%] translate-x-[-50%] flex w-8 h-8 max-md:w-[38px] max-md:h-[38px] justify-center items-center rounded-[50%] text-black bg-white text-[22px] md:text-abse s16:text-lg max-md:text-[22px] font-medium leading-[100%]">
+              <span className="absolute -top-5 lg:-top-4 s18:top-[-22px] left-1/2 -translate-x-1/2 flex w-8 h-8 max-md:w-[38px] max-md:h-[38px] justify-center items-center rounded-50 text-black bg-white text-22 md:text-base s16:text-lg max-md:text-22 font-medium leading-none">
                 1
               </span>
               Betslip
@@ -35,7 +35,7 @@ const BestSlipMobile = () => {
       <div
         className={`rounded-[7px] open-content ${isOpen ? "block" : "hidden"}`}
       >
-        <div className="odd-conected overflow-auto max-h-[550px] block fixed bottom-[84px] lg:bottom-[74px] z-[9] max-w-[428px] mx-auto left-[50%] translate-x-[-50%] s15:hidden rounded-[7px] bg-bluedarkmodecolor shadow-dashboardshadow w-full">
+        <div className="odd-conected overflow-auto max-h-[550px] block fixed bottom-[84px] lg:bottom-[74px] z-[9] max-w-[428px] mx-auto left-1/2 -translate-x-1/2 s15:hidden rounded-[7px] bg-bluedarkmodecolor shadow-dashboardshadow w-full">
           <div className="bg-[#24354E] rounded-md overflow-hidden">
             <div className="bg-[#136459] grid grid-cols-2">
               <div className="p-[8px_10px] s15:p-[10px_14px] cursor-pointer flex items-center gap-2 text-sm xl:text-base s15:text-lg text-white font-medium !leading-none border-r-[1px] border-white/20">
@@ -64,11 +64,11 @@ const BestSlipMobile = () => {
                 <input
                   type="text"
                   placeholder="Booking code"
-                  className="rounded-md border-[1px] border-white/15 bg-[#136459] text-white placeholder:text-white text-base 
+                  className="rounded-md border border-white/15 bg-[#136459] text-white placeholder:text-white text-base 
                   font-normal p-[12px_16px] md:p-[12px_18px] s18:p-[20px_22px] w-full"
                 />
               </div>
-              <button className="bg-yellow hover:bg-[#EBBC1350] rounded-md w-full py-3 px-4 s18:p-[19px] mt-3 text-[#0C2240] text-sm s15:text-[17px] font-medium !leading-none">
+              <button className="bg-yellow hover:bg-[#EBBC1350] rounded-md w-full py-3 px-4 s18:p-[19px] mt-3 text-darkblue text-sm s15:text-[17px] font-medium !leading-none">
                 Load betslip
               </button>
             </div>

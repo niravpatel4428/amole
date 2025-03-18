@@ -69,30 +69,30 @@ const Transaction = () => {
           <div className="overflow-auto">
             <div className="min-w-[900px] flex flex-wrap items-center justify-between p-[20px_20px] md:p-[10px_37px] s16:p-[16px_37px] s18:p-[20px_37px] rounded-[18px_18px_0px_0px] md:rounded-[25px_25px_0px_0px] border bg-[#0b905c26] border-[#0b905c26]">
               <div className="flex items-center gap-[30px] xl:gap-[75px]">
-                <div className="flex items-center gap-[13px]">
-                  <label className="text-sm xl:text-base s15:text-xl s18:text-[22px] font-bold  !leading-tight s18:!leading-[160%] text-white">
+                <div className="flex items-center gap-3">
+                  <label className="text-sm xl:text-base s15:text-xl s18:text-22 font-bold  !leading-tight s18:!leading-[160%] text-white">
                     From:
                   </label>
                   <input
                     type="date"
-                    className="text-mutedblue text-sm s16:text-lg s18:text-[22px] font-bold  !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white rounded-[6px] min-w-[180px] xl:min-w-[227px] py-2 px-2 md:px-3 s18:px-4 md:py-2 s18:py-4 w-full"
+                    className="text-mutedblue text-sm s16:text-lg s18:text-22 font-bold  !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white rounded-md min-w-[180px] xl:min-w-[227px] py-2 px-2 md:px-3 s18:px-4 md:py-2 s18:py-4 w-full"
                   />
                 </div>
-                <div className="flex items-center gap-[13px]">
-                  <label className="text-sm xl:text-base s15:text-xl s18:text-[22px] font-bold !leading-tight s18:!leading-[160%] text-white">
+                <div className="flex items-center gap-3">
+                  <label className="text-sm xl:text-base s15:text-xl s18:text-22 font-bold !leading-tight s18:!leading-[160%] text-white">
                     To:
                   </label>
                   <input
                     type="date"
-                    className="text-mutedblue text-sm s16:text-lg s18:text-[22px] font-bold  !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white min-w-[180px] xl:min-w-[227px] rounded-[6px] py-2 px-2 md:px-3 s18:px-4 md:py-2 s18:py-4 w-full"
+                    className="text-mutedblue text-sm s16:text-lg s18:text-22 font-bold  !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white min-w-[180px] xl:min-w-[227px] rounded-md py-2 px-2 md:px-3 s18:px-4 md:py-2 s18:py-4 w-full"
                   />
                 </div>
               </div>
-              <div className="flex items-center gap-[13px]">
-                <label className="text-sm xl:text-base s15:text-xl s18:text-[22px] font-bold leading-[160%] text-white">
+              <div className="flex items-center gap-3">
+                <label className="text-sm xl:text-base s15:text-xl s18:text-22 font-bold leading-[160%] text-white">
                   Type:
                 </label>
-                <select className="select text-mutedblue text-sm s16:text-lg s18:text-[22px] py-2 px-2 font-bold !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white min-w-[190px] rounded-[6px] md:px-3 s18:px-4 md:py-2 s18:py-4 w-full appearance-none outline-none">
+                <select className="select text-mutedblue text-sm s16:text-lg s18:text-22 py-2 px-2 font-bold !leading-none s18:!leading-[160%] shadow-dashboardshadow border border-solid bg-white min-w-[190px] rounded-md md:px-3 s18:px-4 md:py-2 s18:py-4 w-full appearance-none outline-none">
                   <option>All</option>
                   <option>Type 1</option>
                   <option>Type 2</option>
@@ -106,19 +106,19 @@ const Transaction = () => {
             <table className="table-auto w-full min-w-[900px] text-sm text-left">
               <thead>
                 <tr className="">
-                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-[22px] font-bold !leading-snug s18:leading-[159%] text-white">
+                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-22 font-bold !leading-snug s18:leading-[159%] text-white">
                     Reference ID
                   </th>
-                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-[22px] font-bold !leading-snug s18:leading-[159%] text-white">
+                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-22 font-bold !leading-snug s18:leading-[159%] text-white">
                     Date/Time
                   </th>
-                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-[22px] font-bold !leading-snug s18:leading-[159%] text-white">
+                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-22 font-bold !leading-snug s18:leading-[159%] text-white">
                     Description
                   </th>
-                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-[22px] font-bold !leading-snug s18:leading-[159%] text-white">
+                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-22 font-bold !leading-snug s18:leading-[159%] text-white">
                     Amount
                   </th>
-                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-[22px] font-bold !leading-snug s18:leading-[159%] text-white">
+                  <th className="px-[15px] py-[10px] s15:py-3 s18:px-[23px] text-sm s15:text-base s18:text-22 font-bold !leading-snug s18:leading-[159%] text-white">
                     Balance
                   </th>
                 </tr>
@@ -153,7 +153,7 @@ const Transaction = () => {
           </div>
         </div>
         <div className="mt-5">
-          <div className="flex gap-2 xl:gap-[13px] justify-center items-center">
+          <div className="flex gap-2 xl:gap-3 justify-center items-center">
             <div>
               <img
                 src={greater}
@@ -161,25 +161,25 @@ const Transaction = () => {
                 className="object-contain cursor-pointer rotate-180 brightness-[100] hover:brightness-50"
               />
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue text-white  transition-all duration-300 flex justify-center items-center">
               1
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
               2
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
               3
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
               4
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
               5
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold  hover:text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold  hover:text-white  transition-all duration-300 flex justify-center items-center">
               ...
             </div>
-            <div className="rounded-[4px] cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
+            <div className="rounded cursor-pointer size-5 xl:size-8 text-xs xl:text-sm font-semibold bg-white/30 hover:bg-white  hover:text-darkblue  text-white  transition-all duration-300 flex justify-center items-center">
               50
             </div>
             <div>

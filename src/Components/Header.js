@@ -63,21 +63,21 @@ const Header = () => {
             </Link>
           </div>
           <div className="max-xl:flex max-md:items-center xl:hidden gap-2">
-            <span className="p-2 md:hidden max-md:flex justify-center items-center bg-white/10 rounded-[5px] w-fit h-fit cursor-pointer">
+            <span className="p-2 md:hidden max-md:flex justify-center items-center bg-white/10 rounded-5px w-fit h-fit cursor-pointer">
               <img src={search} alt="search" className="invert w-3 sm:w-4" />
             </span>
             {/* search btn */}
             <div className="relative max-md:hidden">
               <input
                 type="search"
-                className="h-full xl:w-[150px] s16:w-full md:p-[11px_40px_11px_12px] s16:p-[11px_40px_11px_15px] rounded-[5px] 
-                bg-white/10 shadow-inputshadow placeholder:text-base placeholder:leading-[150%] placeholder:text-white text-white"
+                className="h-full xl:w-[150px] s16:w-full md:p-[11px_40px_11px_12px] s16:p-[11px_40px_11px_15px] rounded-5px 
+                bg-white/10 shadow-inputshadow placeholder:text-base placeholder:leading-normal placeholder:text-white text-white"
                 placeholder="Search.."
               />
               <img
                 src={darksearch}
                 alt="search"
-                className="absolute w-[18px] h-[18px] top-[50%] translate-y-[-50%] right-[15px] z-50"
+                className="absolute w-[18px] h-[18px] top-1/2 -translate-y-1/2 right-[15px] z-50"
               />
             </div>
             {/* Balance */}
@@ -88,7 +88,7 @@ const Header = () => {
             {/* join now btn */}
             <button
               onClick={openModalRGS}
-              className="bg-yellow border-solid border-[2px] border-transparent rounded-[5px] py-2 px-1 sm:px-2 text-center text-[8px] sm:text-xs leading-[150%] font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
+              className="bg-yellow border-solid border-2 border-transparent rounded-5px py-2 px-1 sm:px-2 text-center text-[8px] sm:text-xs leading-normal font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
             >
               Join Now
             </button>
@@ -109,7 +109,7 @@ const Header = () => {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className="text-white text-sm s18:text-base !leading-tight s18:leading-[150%] font-normal hover:text-yellow transition-all duration-300"
+                    className="text-white text-sm s18:text-base !leading-tight s18:leading-normal font-normal hover:text-yellow transition-all duration-300"
                   >
                     {item.label}
                   </Link>
@@ -121,27 +121,27 @@ const Header = () => {
               <div className="relative">
                 <input
                   type="search"
-                  className="h-full xl:w-[150px] s16:w-full p-[8px_40px_8px_12px] s18:p-[11px_40px_11px_15px] rounded-[5px] 
-                  bg-[#0A3B3A] shadow-inputshadow placeholder:text-base placeholder:!leading-none s18: s18:placeholder:leading-[150%] placeholder:text-white text-white"
+                  className="h-full xl:w-[150px] s16:w-full p-[8px_40px_8px_12px] s18:p-[11px_40px_11px_15px] rounded-5px 
+                  bg-[#0A3B3A] shadow-inputshadow placeholder:text-base placeholder:!leading-none s18: s18:placeholder:leading-normal placeholder:text-white text-white"
                   placeholder="Search.."
                 />
                 <img
                   src={darksearch}
                   alt="search"
-                  className="absolute w-[18px] h-[18px] top-[50%] translate-y-[-50%] right-[15px] z-50"
+                  className="absolute w-[18px] h-[18px] top-1/2 -translate-y-1/2 right-[15px] z-50"
                 />
               </div>
               {/* joinnow btn */}
               <button
                 onClick={openModalRGS}
-                className="min-w-[88px] bg-yellow  border-solid border-[2px] border-transparent rounded-[5px] inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-base !leading-none s18:leading-[150%] font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
+                className="min-w-[88px] bg-yellow  border-solid border-2 border-transparent rounded-5px inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-base !leading-none s18:leading-normal font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
               >
                 Join Now
               </button>
               {/* login btn */}
               <button
                 onClick={openModal}
-                className="min-w-[88px] shadow-inputshadow border-solid border-[2px] border-[#1b4334] rounded-[5px] inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-base !leading-none s18:leading-[150%] font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white hover:text-white hover:border-[#1b4334] hover:bg-buttonGradientHover"
+                className="min-w-[88px] shadow-inputshadow border-solid border-2 border-[#1b4334] rounded-5px inline-flex items-center justify-center p-2 px-2 s18:p-[11px_8px] text-sm s18:text-base !leading-none s18:leading-normal font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white hover:text-white hover:border-[#1b4334] hover:bg-buttonGradientHover"
               >
                 Login
               </button>
@@ -170,7 +170,7 @@ const Header = () => {
                     {/* Native scrolling using hash links */}
                     <Link
                       to={item.path}
-                      className="text-white text-sm s18:text-base !leading-tight s18:leading-[150%] font-normal hover:text-yellow transtition-all duration-300"
+                      className="text-white text-sm s18:text-base !leading-tight s18:leading-normal font-normal hover:text-yellow transtition-all duration-300"
                     >
                       {item.label}
                     </Link>
@@ -212,12 +212,12 @@ const Hamburger = ({ toggleCollapse, isCollapsed }) => {
       <span
         className={`${
           isCollapsed ? "hidden" : "duration-500"
-        } relative w-[24px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block mb-1`}
+        } relative w-6 max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block mb-1`}
       ></span>
       <span
         className={`${
           isCollapsed
-            ? "w-[20px] -rotate-45 -top-[2px] duration-500"
+            ? "w-[20px] -rotate-45 -top-[3px] duration-500"
             : "duration-500"
         } relative w-[18px] max-[420px]:h-[2px] h-[3px] rounded-md bg-yellow block`}
       ></span>

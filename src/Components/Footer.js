@@ -25,7 +25,7 @@ const Footer = () => {
                 <img
                   src={location}
                   alt="location"
-                  className="w-full max-w-[16px] object-contain"
+                  className="w-full max-w-4 object-contain"
                 />
                 P.O.BOX 25675-00100 NAIROBI
               </div>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <img
                   src={mail}
                   alt="mail"
-                  className="w-full max-w-[16px] object-contain"
+                  className="w-full max-w-4 object-contain"
                 />
                 care@jambobet.co.de
               </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                 <img
                   src={user}
                   alt="user"
-                  className="w-full max-w-[16px] object-contain"
+                  className="w-full max-w-4 object-contain"
                 />
                 +254 719 034 034
               </Link>

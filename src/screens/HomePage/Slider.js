@@ -111,7 +111,7 @@ const Slidersection = () => {
         <div className="max-[575px]:justify-center max-md:ml-[0px] max-lg:p-[0px] p-[0px_0px_0px_18px] grid grid-cols-12 gap-[35px] items-center">
           <div className="max-[575px]:hidden max-[575px]:col-span-0 col-span-1">
             <button
-              className="max-[575px]:hidden ml-auto custom-arrow custom-prev flex justify-center items-center  max-md:w-[32px] max-md:h-[32px] md:w-[38px] md:h-[38px] s18:w-[48px] s18:h-[48px] bg-yellow border-solid border-[2px] border-yellow rounded-[5px] hover:bg-transparent transition-all duration-[0.3s]"
+              className="max-[575px]:hidden ml-auto custom-arrow custom-prev flex justify-center items-center  max-md:w-8 max-md:h-8 md:w-[38px] md:h-[38px] s18:w-12 s18:h-12 bg-yellow border-solid border-2 border-yellow rounded-5px hover:bg-transparent transition-all duration-300"
               onClick={handlePrevClick}
             >
               <svg
@@ -138,10 +138,10 @@ const Slidersection = () => {
                         <img
                           src={imgslider.darkImage}
                           alt="img"
-                          className="max-[575px]:w-[35px] size-[35px] xl:size-9 s15:size-10 s18:size-12 rounded-[5px]"
+                          className="max-[575px]:w-[35px] size-[35px] xl:size-9 s15:size-10 s18:size-12 rounded-5px"
                         />
                       </div>
-                      <span className="block text-center max-md:text-[10px] text-[12px] leading-[16px] mt-[3px] text-white">
+                      <span className="block text-center max-md:text-[10px] text-xs leading-[16px] mt-[3px] text-white">
                         {imgslider.name}
                       </span>
                     </div>
@@ -152,7 +152,7 @@ const Slidersection = () => {
           </div>
           <div className="max-[575px]:hidden max-[575px]:col-span-0 col-span-1">
             <button
-              className="max-[575px]:hidden ml-[-20px] custom-arrow custom-next flex justify-center items-center  max-md:w-[32px] max-md:h-[32px] md:w-[38px] md:h-[38px] s18:w-[48px] s18:h-[48px] bg-yellow border-solid border-[2px] border-yellow rounded-[5px] hover:bg-transparent transition-all duration-[0.3s]"
+              className="max-[575px]:hidden ml-[-20px] custom-arrow custom-next flex justify-center items-center  max-md:w-8 max-md:h-8 md:w-[38px] md:h-[38px] s18:w-12 s18:h-12 bg-yellow border-solid border-2 border-yellow rounded-5px hover:bg-transparent transition-all duration-300"
               onClick={handleNextClick}
             >
               <svg
@@ -171,9 +171,9 @@ const Slidersection = () => {
           </div>
         </div>
         <div className="relative top-[-65px] p-[0px_140px_0px_120px] hidden">
-          <div className="custom-arrows w-full justify-between top-[50%] translate-y-[50%] flex max-md:space-x-2 space-x-4">
+          <div className="custom-arrows w-full justify-between top-1/2 -translate-y-1/2 flex max-md:space-x-2 space-x-4">
             <button
-              className="custom-prev flex justify-center items-center max-xl:p-[16px] max-md:p-[10px] max-md:w-[32px] max-md:h-[32px] md:w-[45px] md:h-[45px] w-[48px] h-[48px] bg-yellow border-solid border-[2px] border-yellow rounded-[5px] hover:bg-transparent transition-all duration-[0.3s]"
+              className="custom-prev flex justify-center items-center max-xl:p-[16px] max-md:p-[10px] max-md:w-8 max-md:h-8 md:w-[45px] md:h-[45px] w-12 h-12 bg-yellow border-solid border-2 border-yellow rounded-5px hover:bg-transparent transition-all duration-300"
               onClick={handlePrevClick}
             >
               <svg
@@ -190,7 +190,7 @@ const Slidersection = () => {
               </svg>
             </button>
             <button
-              className="custom-next flex justify-center items-center max-xl:p-[16px] max-md:p-[10px] max-md:w-[32px] max-md:h-[32px] md:w-[45px] md:h-[45px] w-[48px] h-[48px] bg-yellow border-solid border-[2px] border-yellow rounded-[5px] hover:bg-transparent transition-all duration-[0.3s]"
+              className="custom-next flex justify-center items-center max-xl:p-[16px] max-md:p-[10px] max-md:w-8 max-md:h-8 md:w-[45px] md:h-[45px] w-12 h-12 bg-yellow border-solid border-2 border-yellow rounded-5px hover:bg-transparent transition-all duration-300"
               onClick={handleNextClick}
             >
               <svg

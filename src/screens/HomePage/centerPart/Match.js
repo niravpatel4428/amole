@@ -41,7 +41,7 @@ const Match = () => {
     <>
       <div className="max-sm:mt-0 mt-3 s18:mt-[17px] sm:rounded-lg bg-[#0A3B3A] shadow-dashboardshadow">
         {/* sports / Hrs icon TODAY THU FRI SAT SUN */}
-        <div className="sticky max-[420px]:top-20 top-20 sm:top-24 md:top-[136px] lg:top-[calc(154px-10px)] xl:top-[132px] s16:top-32 s18:top-36 rounded-[6px] bg-[#0A3B3A] shadow-dashboardshadow">
+        <div className="sticky max-[420px]:top-20 top-20 sm:top-24 md:top-[136px] lg:top-[calc(154px-10px)] xl:top-[132px] s16:top-32 s18:top-36 rounded-md bg-[#0A3B3A] shadow-dashboardshadow">
           <div className="max-sm:flex-col max-sm:items-start max-sm:p-[8px_15px_0px] flex p-[0px_20px] items-center justify-between border-b-[1px] border-solid border-lightborderyellow">
             <span className="text-white text-base s18:text-xl font-bold leading-none">
               Sports
@@ -81,7 +81,7 @@ const Match = () => {
                   className="cursor-pointer flex items-center whitespace-nowrap text-white hover:text-yellow text-sm s18:text-base font-normal leading-[143%] transition-all duration-300 "
                 >
                   {sport.name}
-                  <span className="pt-[2px] min-w-[33px] min-h-[20px] ml-[5px] rounded-[23px] bg-yellow flex justify-center items-center text-white text-sm font-medium leading-[128%] last:mr-3b">
+                  <span className="pt-[2px] min-w-[33px] min-h-5 ml-[5px] rounded-[23px] bg-yellow flex justify-center items-center text-white text-sm font-medium leading-tight last:mr-3b">
                     {sport.count}
                   </span>
                 </li>
@@ -92,19 +92,19 @@ const Match = () => {
         {/* leage / 1*2 / double chance header */}
         <div className="scrollable">
           <div className="max-lg:min-w-[732px] flex items-center justify-between max-sm:p-[8px_15px] py-3 px-5 s18:p-[15px_23px]">
-            <select className="rounded-[6px] bg-forestGreen py-2 px-[11px] s18:p-[9px_11px] w-[247px] border-none outline-none text-white text-sm font-normal leading-[114%] appearance-none">
+            <select className="rounded-md bg-forestGreen py-2 px-[11px] s18:p-[9px_11px] w-[247px] border-none outline-none text-white text-sm font-normal leading-12 appearance-none">
               <option value="" selected>
                 Sort by league
               </option>
               <option value="option1">Sort by time</option>
             </select>
-            <span className="text-white text-sm font-normal leading-[128%]">
+            <span className="text-white text-sm font-normal leading-tight">
               1X2
             </span>
-            <span className="text-white text-sm font-normal leading-[128%]">
+            <span className="text-white text-sm font-normal leading-tight">
               Double chance
             </span>
-            <select className="rounded-[6px] bg-forestGreen py-2 px-[11px] s18:p-[9px_11px] w-[213px] border-none outline-none text-white text-sm font-normal leading-[114%] appearance-none">
+            <select className="rounded-md bg-forestGreen py-2 px-[11px] s18:p-[9px_11px] w-[213px] border-none outline-none text-white text-sm font-normal leading-12 appearance-none">
               <option value="" selected>
                 GG/NG
               </option>
@@ -118,7 +118,7 @@ const Match = () => {
             <div key={leagueIndex} className="main-title-block">
               {/* League Title */}
               <div className="title-block flex justify-between items-center cursor-pointer max-sm:p-[10px_15px] p-[10px_23px] bg-forestGreen">
-                <span className="text-white max-sm:text-[12px] text-sm font-medium leading-[128%]">
+                <span className="text-white max-sm:text-xs text-sm font-medium leading-tight">
                   {league.leagueTitle}
                 </span>
                 <img src={whiteselectdown} alt="downarrow" />
@@ -144,7 +144,7 @@ const Match = () => {
                           {match.details.map((detail, detailIndex) => (
                             <span
                               key={detailIndex}
-                              className={`max-sm:text-[9px] text-[12px] leading-[133%] ${
+                              className={`max-sm:text-[9px] text-xs leading-[133%] ${
                                 detail.bold ? "font-bold" : "font-normal"
                               } ${
                                 detail.colorRed
@@ -160,10 +160,10 @@ const Match = () => {
 
                       {/* Odds */}
                       <div className="scrollable max-sm:w-full max-sm:max-w-[50%] max-lg:overflow-auto w-full lg:max-w-[520px] xl:max-w-[700px] s15:max-w-[550px] s18:max-w-[645px]">
-                        <div className="w-full max-sm:min-w-full  max-lg:min-w-[550px] lg:max-w-[520px] xl:max-w-[700px] s15:max-w-[550px] s18:max-w-[645px] sm:grid sm:grid-cols-12 gap-[12px] xl:gap-[18px]">
+                        <div className="w-full max-sm:min-w-full  max-lg:min-w-[550px] lg:max-w-[520px] xl:max-w-[700px] s15:max-w-[550px] s18:max-w-[645px] sm:grid sm:grid-cols-12 gap-3 xl:gap-[18px]">
                           {match.odds.map((group, groupIndex) => (
                             <div key={groupIndex} className="sm:col-span-4">
-                              <div className="flex gap-[4px]">
+                              <div className="flex gap-1">
                                 {group
                                   .filter((odd) => {
                                     if (isMobile) {
@@ -181,7 +181,7 @@ const Match = () => {
                                         className="w-3/4 sm:w-1/2"
                                       >
                                         <div
-                                          className={`odd-block cursor-pointer rounded-[6px] w-full py-3 md:py-2 s18:py-3  flex flex-col gap-[4px] border items-center justify-center 
+                                          className={`odd-block cursor-pointer rounded-md w-full py-3 md:py-2 s18:py-3  flex flex-col gap-1 border items-center justify-center 
                                                         ${
                                                           isSelected
                                                             ? "bg-[#E2E2E2]  text-black  border-yellow"
@@ -197,7 +197,7 @@ const Match = () => {
                                                 : ""
                                             } ${
                                               isSelected ? "!text-darkblue" : ""
-                                            }  text-extralightwhite text-[12px] font-normal leading-[150%] md:leading-tight s18:leading-[150%]`}
+                                            }  text-extralightwhite text-xs font-normal leading-normal md:leading-tight s18:leading-normal`}
                                           >
                                             {odd.label}
                                             {odd.highlight && (
@@ -207,7 +207,7 @@ const Match = () => {
                                           <span
                                             className={`${
                                               isSelected ? "!text-darkblue" : ""
-                                            } text-white text-sm s18:text-base font-medium leading-[150%] md:leading-tight s18:leading-[150%]`}
+                                            } text-white text-sm s18:text-base font-medium leading-normal md:leading-tight s18:leading-normal`}
                                           >
                                             {odd.value}
                                           </span>

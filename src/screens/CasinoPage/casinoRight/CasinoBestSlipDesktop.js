@@ -31,10 +31,10 @@ const CasinoBestSlipDesktop = () => {
             <input
               type="text"
               placeholder="Booking code"
-              className="rounded-md border-[1px] border-white/15 bg-[#136459] text-white placeholder:text-white text-base font-normal p-[12px_16px] s15:p-[20px_22px] w-full"
+              className="rounded-md border border-white/15 bg-[#136459] text-white placeholder:text-white text-base font-normal p-[12px_16px] s15:p-[20px_22px] w-full"
             />
           </div>
-          <button className="bg-yellow hover:bg-[#EBBC1350] rounded-md w-full p-[19px] mt-3 text-[#0C2240] text-sm s15:text-[17px] font-medium !leading-none">
+          <button className="bg-yellow hover:bg-[#EBBC1350] rounded-md w-full p-[19px] mt-3 text-darkblue text-sm s15:text-[17px] font-medium !leading-none">
             Load betslip
           </button>
         </div>

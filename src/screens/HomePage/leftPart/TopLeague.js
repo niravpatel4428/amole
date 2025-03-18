@@ -42,7 +42,7 @@ const TopLeague = () => {
   };
   return (
     <>
-      <div className="rounded-[6px] bg-teal shadow-dashboardshadow mt-3">
+      <div className="rounded-md bg-teal shadow-dashboardshadow mt-3">
         <div
           className="dropdown-block cursor-pointer flex items-center justify-between rounded-[6px_6px_0px_0px] p-[8px_10px] xl:p-[8px_15px] bg-forestGreen"
           onClick={toggleLeaguesVisibility}
@@ -63,13 +63,13 @@ const TopLeague = () => {
                 key={index}
                 className="cursor-pointer flex justify-between py-2 px-3 s18:p-[10px_14px] border-b-[1px] border-solid border-bordercolor"
               >
-                <p className="relative pl-[18px] mr-[10px] text-white text-[12px] xl:text-sm font-medium leading-[128%] md:!leading-tight s18:leading-[128%] before:absolute before:content-[''] before:w-[9px] before:h-[9px] before:bg-yellow before:left-0 before:top-[3px] before:rounded-[50%]">
+                <p className="relative pl-[18px] mr-[10px] text-white text-xs xl:text-sm font-medium leading-tight md:!leading-tight s18:leading-tight before:absolute before:content-[''] before:w-[9px] before:h-[9px] before:bg-yellow before:left-0 before:top-[3px] before:rounded-50">
                   {league.name}
-                  <span className="text-lightwhite text-[12px] font-normal block leading-[150%] md:!leading-tight s18:leading-[150%]">
+                  <span className="text-lightwhite text-xs font-normal block leading-normal md:!leading-tight s18:leading-normal">
                     {league.country}
                   </span>
                 </p>
-                <span className="text-lightwhite text-sm font-normal block leading-[128%]">
+                <span className="text-lightwhite text-sm font-normal block leading-tight">
                   {league.count}
                 </span>
               </div>
