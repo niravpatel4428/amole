@@ -19,7 +19,7 @@ const navItems = [
 const SportMode = () => {
   return (
     <div className="bg-nav">
-      <ul className="flex flex-row max-lg:justify-start justify-center items-center gap-4 overflow-x-auto scrollable">
+      <ul className="flex flex-row max-lg:justify-start justify-center items-center gap-3 xl:gap-4 overflow-x-auto scrollable">
         {navItems.map((item, index) => (
           <li
             key={index}
@@ -29,7 +29,7 @@ const SportMode = () => {
           >
             <Link
               to={item.innerLinks}
-              className="inline-block whitespace-nowrap text-xs md:text-sm font-normal text-white hover:bg-navHover uppercase py-2 md:py-3 px-2"
+              className="inline-block whitespace-nowrap text-xs xl:text-sm font-normal text-white hover:bg-navHover uppercase py-2 md:py-3 px-2"
             >
               {item.label}
             </Link>

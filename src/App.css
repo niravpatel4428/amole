@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  /* position: relative; */
+  position: relative;
   font-family: "Roboto", serif;
   color: #0c2240;
   background-color: rgb(2, 25, 30);
@@ -54,20 +54,22 @@ input::-webkit-search-cancel-button {
   border-bottom: 1px solid #13645975;
 }
 
-select {
-  background-image: url("images/selectdropdownsvg.svg");
-  background-repeat: no-repeat;
-  background-size: 10px;
-  background-position: right 11px center;
-}
+select { background-image: url("images/selectdropdownsvg.svg"); background-repeat: no-repeat; background-size: 10px; background-position: right 11px center; }
+.select { background-image: url("images/angledown.svg"); }
+select:focus-visible { outline: none; }
+.winners-slider .rfm-child { margin: 0 5px; }
 
-.select {
-  background-image: url("images/angledown.svg");
-}
+.center-img-slider .slick-dots { bottom: 12px; }
+.center-img-slider .slick-dots li button:before { font-size: 20px; color: #ebbc13; opacity: 1; }
+.center-img-slider .slick-dots li.slick-active button:before { color: green; opacity: 1; }
+.center-img-slider .slick-dots li { margin: 0 10px; }
+.sport-first-item select { background-image: none; }
 
-.winners-slider .rfm-child {
-  margin: 0 5px;
-}
+/* react datepicker */
+.react-datepicker { font-family: "Poppins", serif; border-radius: 6px!; -webkit-border-radius: 6px!; -moz-border-radius: 6px!; -ms-border-radius: 6px!; -o-border-radius: 6px!; }
+.react-datepicker__day { color: #0c2240; }
+.react-datepicker__header { background-color: #fff !important; }
+
 
 @keyframes fade-in {
   from {
@@ -95,6 +97,13 @@ select {
   .scrollable {
     scrollbar-width: none !important;
     -ms-overflow-style: none !important;
+  }
+
+  .center-img-slider .slick-dots li button:before {
+    font-size: 12px;
+  }
+  .center-img-slider .slick-dots {
+    bottom: 8px;
   }
 }
 

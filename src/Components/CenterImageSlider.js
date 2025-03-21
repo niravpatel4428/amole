@@ -17,7 +17,7 @@ const CenterImageSlider = () => {
 
   const settings = {
     arrows: false,
-    dots: false,
+    dots: true,
     fade: true,
     autoplay: true,
     infinite: true,
@@ -27,7 +27,7 @@ const CenterImageSlider = () => {
     responsive: [],
   };
   return (
-    <>
+    <div className="center-img-slider">
       <Slider ref={sliderRef} {...settings}>
         {imageslider.map((imageslider, index) => (
           <div
@@ -42,7 +42,7 @@ const CenterImageSlider = () => {
           </div>
         ))}
       </Slider>
-    </>
+    </div>
   );
 };
 
