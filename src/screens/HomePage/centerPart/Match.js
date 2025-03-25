@@ -207,7 +207,7 @@ const StickyHeader = () => {
           <span className="text-white text-base s18:text-xl font-bold leading-none">
             Sports
           </span>
-          <ul className="scrollable max-sm:w-full flex gap-3 md:gap-5 items-center justify-between">
+          <ul className="max-sm:w-full flex gap-3 md:gap-5 items-center justify-between">
           <li className="sport-first-item max-sm:whitespace-nowrap max-sm:p-[5px_0px] py-3 s18:p-[27px_0px_27px] relative flex items-center cursor-pointer text-white text-xs md:text-sm s18:text-base font-medium !leading-tight s18:leading-[143%] hover:text-yellow transition-all duration-300 after:absolute after:content-[''] after:bg-darkblue after:w-[0px] after:left-[50%] after:translate-x-[-50%] after:h-[2px] after:mx-auto after:bottom-0 after:transition-all after:duration-300 hover:after:w-full hover:after:bg-yellow">
             <select name="hours" id="hours" className="bg-transparent">
               <option value="hrs">Hrs</option>

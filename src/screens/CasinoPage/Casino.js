@@ -10,6 +10,7 @@ import CenterImageSlider from "../../Components/CenterImageSlider";
 import CasinoCenter from "./casinoCenter/CasinoCenter";
 import CasinoBestSlipDesktop from "./casinoRight/CasinoBestSlipDesktop";
 import BestSlipMobile from "./bestSlipMobileCasinoPage/bestSlipMobile";
+import MobileLeftPart from "./casinoLeft/MobileLeftPart";
 const Casino = () => {
   return (
     <>
@@ -26,6 +27,12 @@ const Casino = () => {
                 <>
                   <CenterImageSlider />
                 </>
+
+                <>
+                  {/* Mobile navbar */}
+                  <MobileLeftPart />
+                </>
+
                 <div className="p-5 md:p-3 s15:p-5 rounded-md shadow-inputshadow">
                   <>
                     <Winners />

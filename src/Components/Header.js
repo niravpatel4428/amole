@@ -95,10 +95,10 @@ const Header = () => {
             {/* login btn */}
             <button
               onClick={openModal}
-              className="max-md:text-[0px] w-fit shadow-inputshadow !rounded-md overflow-hidden inline-flex items-center justify-center py-[10px] px-2 text-base leading-none font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white  hover:text-white hover:bg-buttonGradientHover"
+              className="w-fit shadow-inputshadow rounded-5px overflow-hidden inline-flex items-center justify-center py-[12px] px-2 text-[8px] sm:text-xs leading-none font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white  hover:text-white hover:bg-buttonGradientHover"
             >
               Login
-              <img src={login} alt="search" className="md:hidden w-3 sm:w-4" />
+              {/* <img src={login} alt="search" className="md:hidden w-3 sm:w-4" /> */}
             </button>
             
           </div>

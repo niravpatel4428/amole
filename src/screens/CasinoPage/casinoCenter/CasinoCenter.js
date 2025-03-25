@@ -33,6 +33,7 @@ import c27 from "../../../images/c27.png";
 import c28 from "../../../images/c28.png";
 import c29 from "../../../images/c29.png";
 import c30 from "../../../images/c30.png";
+import MobileLeftPart from "../casinoLeft/MobileLeftPart";
 
 const CasinoCenter = () => {
   return (
