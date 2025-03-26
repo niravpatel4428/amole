@@ -22,8 +22,8 @@ import spinmatic from "../../../images/spinmatic.svg";
 const MobileLeftPart = () => {
   return (
     <>
-      <div className="block md:hidden bg-teal mt-[-10px] mb-2">
-        <div className="flex gap-2 scrollable">
+      <div className="block md:hidden bg-teal">
+        <div className="flex gap-2 scrollable border-b border-forestGreen">
           {categories.map((category) => (
             <Link
               to={category.linktext}

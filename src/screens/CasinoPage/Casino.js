@@ -28,16 +28,12 @@ const Casino = () => {
                   <CenterImageSlider />
                 </>
 
-                <>
-                  {/* Mobile navbar */}
-                  <MobileLeftPart />
-                </>
-
                 <div className="md:p-3 s15:p-5 rounded-md shadow-inputshadow">
                   <>
                     <Winners />
                   </>
                   <>
+                    <MobileLeftPart />
                     <CasinoCenter />
                   </>
                 </div>
