@@ -11,7 +11,7 @@ const Winners = () => {
   const filteredWinners = winners.filter((winner) => winner.type === activeTab);
   return (
     <div className="mb-3 winners-slider">
-      <ul className="mb-5 flex flex-row justify-center gap-5">
+      <ul className="mb-5 flex flex-row justify-center gap-3 sm:gap-5">
         <li
           className={`text-white hover:text-yellow whitespace-nowrap text-xs md:text-sm font-semibold cursor-pointer ${
             activeTab === "daily" ? "text-yellow underline" : ""
@@ -39,7 +39,7 @@ const Winners = () => {
       </ul>
       <Marquee pauseOnHover>
         {filteredWinners.map((winner, index) => (
-          <div key={index} className="rounded-md flex gap-1 bg-[#136459]">
+          <div key={index} className="rounded-md flex gap-1 bg-forestGreen">
             <Link to="/" className="p-1 pr-0 w-fit">
               <img
                 src={winner.imgSrc}

@@ -62,8 +62,8 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className="max-xl:flex max-md:items-center xl:hidden gap-2">
-            <span className="p-2 md:hidden max-md:flex justify-center items-center bg-white/10 rounded-5px w-fit h-fit cursor-pointer">
+          <div className="max-xl:flex max-md:items-center xl:hidden gap-1 sm:gap-2">
+            <span className="p-2 md:hidden max-md:flex justify-center items-center bg-white/10 rounded-sm md:rounded-5px w-fit max-sm:h-8 h-fit cursor-pointer">
               <img src={search} alt="search" className="invert w-3 sm:w-4" />
             </span>
             {/* search btn */}
@@ -81,21 +81,21 @@ const Header = () => {
               />
             </div>
             {/* Balance */}
-            <button className="bg-yellow border-2 border-transparent hover:border-yellow rounded-md flex gap-1 sm:gap-2 items-center justify-between py-2 px-1 sm:px-2 text-[8px] sm:text-xs font-medium text-darkGreen hover:text-yellow hover:bg-transparent group">
+            <button className="bg-yellow border-2 border-transparent hover:border-yellow rounded-sm md:rounded-5px flex gap-1 sm:gap-2 items-center justify-between py-2 px-1 sm:px-2 text-[8px] sm:text-xs font-medium text-darkGreen hover:text-yellow hover:bg-transparent group">
               <UserIcon />
               <span>$20.15</span>
             </button> 
             {/* join now btn */}
             <button
               onClick={openModalRGS}
-              className="bg-yellow border-solid border-2 border-transparent rounded-5px py-2 px-1 sm:px-2 text-center text-[8px] sm:text-xs leading-normal font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
+              className="bg-yellow border-solid border-2 border-transparent rounded-sm md:rounded-5px py-2 px-1 sm:px-2 text-center text-[8px] sm:text-xs leading-normal font-medium transition-all duration-300 hover:bg-transparent hover:border-yellow hover:text-yellow"
             >
               Join Now
             </button>
             {/* login btn */}
             <button
               onClick={openModal}
-              className="w-fit shadow-inputshadow rounded-5px overflow-hidden inline-flex items-center justify-center py-[12px] px-2 text-[8px] sm:text-xs leading-none font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white  hover:text-white hover:bg-buttonGradientHover"
+              className="w-fit shadow-inputshadow rounded-sm md:rounded-5px overflow-hidden inline-flex items-center justify-center py-[12px] px-2 text-[8px] sm:text-xs leading-none font-medium transition-all duration-300 bg-buttonGradient bg-no-repeat text-white  hover:text-white hover:bg-buttonGradientHover"
             >
               Login
               {/* <img src={login} alt="search" className="md:hidden w-3 sm:w-4" /> */}
@@ -122,7 +122,7 @@ const Header = () => {
                 <input
                   type="search"
                   className="h-full xl:w-[150px] s16:w-full p-[8px_40px_8px_12px] s18:p-[11px_40px_11px_15px] rounded-5px 
-                  bg-[#0A3B3A] shadow-inputshadow placeholder:text-base placeholder:!leading-none s18: s18:placeholder:leading-normal placeholder:text-white text-white"
+                  bg-teal shadow-inputshadow placeholder:text-base placeholder:!leading-none s18: s18:placeholder:leading-normal placeholder:text-white text-white"
                   placeholder="Search.."
                 />
                 <img
@@ -161,7 +161,7 @@ const Header = () => {
               isCollapsed
                 ? "top-0 left-0 h-full transition-all duration-500"
                 : "top-0 left-[-100%] transition-all duration-500"
-            } fixed z-[990] top-0 overflow-auto bg-[#136459] h-full w-full xl:hidden`}
+            } fixed z-[990] top-0 overflow-auto bg-forestGreen h-full w-full xl:hidden`}
           >
             <div className="h-full w-full flex justify-center">
               <ul className="flex flex-col items-center justify-center gap-5 overflow-auto">

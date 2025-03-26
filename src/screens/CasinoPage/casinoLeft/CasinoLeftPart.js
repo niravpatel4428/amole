@@ -31,7 +31,7 @@ const CasinoLeftPart = () => {
   return (
     <>
       <div className="w-full flex flex-col gap-[10px]">
-        <div className="rounded-md bg-[#0a3b3a] p-[10px_12px] s15:p-[10px_12px] s18:py-[17px] s18:px-5 flex gap-2 s15:gap-3">
+        <div className="rounded-md bg-teal p-[10px_12px] s15:p-[10px_12px] s18:py-[17px] s18:px-5 flex gap-2 s15:gap-3">
           <img
             src={fire}
             alt="fire"
@@ -39,7 +39,7 @@ const CasinoLeftPart = () => {
           />
           <p className="text-xs s14:text-sm font-normal text-white/60">New</p>
         </div>
-        <div className="rounded-md bg-[#0a3b3a] p-[10px_6px] s15:p-[10px] flex flex-col gap-1 s14:gap-2 s15:gap-[10px]">
+        <div className="rounded-md bg-teal p-[10px_6px] s15:p-[10px] flex flex-col gap-1 s14:gap-2 s15:gap-[10px]">
           <p className="text-white text-xs font-normal">Categories</p>
           {categories.map((category) => (
             <Link
@@ -70,7 +70,7 @@ const CasinoLeftPart = () => {
             </Link>
           ))}
         </div>
-        <div className="rounded-md bg-[#0a3b3a] p-[10px_6px] s15:p-[10px] flex flex-col gap-1 s14:gap-2 s18:gap-[10px]">
+        <div className="rounded-md bg-teal p-[10px_6px] s15:p-[10px] flex flex-col gap-1 s14:gap-2 s18:gap-[10px]">
           <p className="text-white text-xs font-normal">Providers</p>
           {providers.map((category) => (
             <Link

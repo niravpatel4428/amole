@@ -33,7 +33,7 @@ const Casino = () => {
                   <MobileLeftPart />
                 </>
 
-                <div className="p-5 md:p-3 s15:p-5 rounded-md shadow-inputshadow">
+                <div className="md:p-3 s15:p-5 rounded-md shadow-inputshadow">
                   <>
                     <Winners />
                   </>

@@ -41,7 +41,7 @@ const Match = () => {
   }, []);
   return (
     <>
-      <div className="max-sm:mt-0 mt-3 s18:mt-[17px] sm:rounded-lg bg-[#0A3B3A] shadow-dashboardshadow">
+      <div className="max-sm:mt-0 mt-3 s18:mt-[17px] sm:rounded-lg bg-teal shadow-dashboardshadow">
         {/* sports / Hrs icon TODAY THU FRI SAT SUN */}
         <StickyHeader />
         {/* leage / 1*2 / double chance header */}
@@ -202,7 +202,7 @@ const StickyHeader = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="sticky max-[420px]:top-20 top-20 sm:top-20 md:top-28 lg:top-28 xl:top-28 s15:top-28 s16:top-[118px] s18:top-28 rounded-md bg-[#0A3B3A] shadow-dashboardshadow">
+      <div className="sticky max-[420px]:top-20 top-20 sm:top-20 md:top-28 lg:top-28 xl:top-28 s15:top-28 s16:top-[118px] s18:top-28 rounded-md bg-teal shadow-dashboardshadow">
         <div className="max-sm:flex-col max-sm:items-start max-sm:p-[8px_15px_0px] flex p-[0px_20px] items-center justify-between border-b-[1px] border-solid border-lightborderyellow">
           <span className="text-white text-base s18:text-xl font-bold leading-none">
             Sports
@@ -258,7 +258,7 @@ const StickyHeader = () => {
                 />
               </div>
               {open && (
-                <div className="absolute top-12 right-0 z-50">
+                <div className="absolute top-6 sm:top-8 s18:top-12 right-0 z-50">
                   <DatePicker
                     selected={startDate}
                     onChange={(date) => {

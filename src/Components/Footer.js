@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="relative bg-[#0A3B3A] pb-[120px] s15:pb-[0px]">
+    <div className="relative bg-teal pb-[120px] s15:pb-[0px]">
       <div className="w-full max-w-[1565px] px-5 mx-auto">
         <div className="pt-[50px] lg:pt-10 s18:pt-[50px] pb-[30px] md:pb-10 xl:pb-12 2xl:pb-[101px] flex max-sm:flex-col sm:flex-wrap lg:flex-nowrap justify-center gap-[50px] sm:gap-10 xl:gap-28 2xl:gap-[180px]">
           <div className="w-full sm:w-[45%] lg:max-w-[200px] xl:max-w-[240px]">
@@ -182,7 +182,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-[18px] md:py-3 s18:py-[18px] text-center bg-[#0A3B3A]">
+      <div className="py-[18px] md:py-3 s18:py-[18px] text-center bg-teal">
         <p className="text-white text-sm font-normal">
           Copyright © 2025 <Link to="/" className="hover:text-yellow">Jambo bet</Link>. All rights reserved
         </p>

@@ -29,7 +29,7 @@ const BestSlipDesktop = () => {
             My bets
           </span>
         </div>
-        <span className="cursor-pointer border-solid border-b-[2px] border-b-lightwhiteborder flex p-3 md:p-2 md:px-3 s18:p-3 bg-[#0A3B3A] items-center gap-3 text-[#EF4444] text-sm font-medium leading-tight">
+        <span className="cursor-pointer border-solid border-b-[2px] border-b-lightwhiteborder flex p-3 md:p-2 md:px-3 s18:p-3 bg-teal items-center gap-3 text-[#EF4444] text-sm font-medium leading-tight">
           <img src={remove} alt="remove" />
           Remove all
         </span>

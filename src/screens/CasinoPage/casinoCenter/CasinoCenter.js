@@ -37,7 +37,7 @@ import MobileLeftPart from "../casinoLeft/MobileLeftPart";
 
 const CasinoCenter = () => {
   return (
-    <div className="bg-[#0a3b3a] p-5 md:p-3 s15:p-5 rounded-md shadow-inputshadow">
+    <div className="bg-teal p-5 md:p-3 s15:p-5 md:rounded-md shadow-inputshadow">
       {/* search */}
       <div className="relative rounded-md shadow-inputshadow inputshadow mb-3 s15:mb-5">
         <input

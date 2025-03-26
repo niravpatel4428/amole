@@ -65,7 +65,7 @@ const BestSlipMobile = () => {
               </span>
             </div>
             <div>
-              <span className="cursor-pointer border-b-[2px] border-b-lightwhiteborder flex p-[12px] bg-[#0A3B3A] items-center gap-3 text-[#EF4444] text-sm font-medium leading-tight">
+              <span className="cursor-pointer border-b-[2px] border-b-lightwhiteborder flex p-[12px] bg-teal items-center gap-3 text-[#EF4444] text-sm font-medium leading-tight">
                 <img src={remove} alt="remove" />
                 Remove all
               </span>

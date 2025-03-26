@@ -65,7 +65,7 @@ const Transaction = () => {
   return (
     <>
       <div className="p-[10px_15px_40px] md:p-[10px_20px_40px] s16:p-[15px_30px_60px] s18:p-[20px_30px_100px]">
-        <div className="overflow-hidden shadow-dashboardshadow w-full max-w-[1780px] mx-auto rounded-[18px] md:rounded-[25px] border border-solid border-[#0b905c26] bg-[#0A3B3A]">
+        <div className="overflow-hidden shadow-dashboardshadow w-full max-w-[1780px] mx-auto rounded-[18px] md:rounded-[25px] border border-solid border-[#0b905c26] bg-teal">
           <div className="overflow-auto">
             <div className="min-w-[900px] flex flex-wrap items-center justify-between p-[20px_20px] md:p-[10px_37px] s16:p-[16px_37px] s18:p-[20px_37px] rounded-[18px_18px_0px_0px] md:rounded-[25px_25px_0px_0px] border bg-[#0b905c26] border-[#0b905c26]">
               <div className="flex items-center gap-[30px] xl:gap-[75px]">
